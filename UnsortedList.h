@@ -57,6 +57,16 @@ public:
 private:
   int length;
 
+  struct Node
+  {
+    T value;
+    Node *next;
+  };
+
+  Node *head;
+  Node *currPos;
+  int arr[MAX_ITEMS];
+  int currentPos;
   // Need to create the head... and a node definition
   // Also need something to track the iterator position
 };

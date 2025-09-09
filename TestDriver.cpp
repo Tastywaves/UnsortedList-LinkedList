@@ -20,6 +20,21 @@ int main()
 	int number;
 	int item;
 	UnsortedList<int> list;
+	// Mini tests
+	UnsortedList<char> charList;
+	charList.PutItem('a');
+	charList.PutItem('b');
+	charList.PutItem('c');
+	charList.PutItem('d');
+	charList.DeleteItem('c');
+	if (charList.Contains(someItem: 'a'))
+	{
+		cout << "The list has an 'a'" << endl;
+	}
+	if (charList.Contains(someItem: 'z'))
+	{
+		cout << "The list has a 'z'" << endl;
+	}
 
 	bool found;
 
@@ -92,7 +107,7 @@ int main()
             }
 		}
 		else if (command == "MakeEmpty") {
-			out << "Make list empty." << endl;
+			cout << "Make list empty." << endl;
 			outFile << "Make list empty." << endl;
 			list.MakeEmpty();
 		}
